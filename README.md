@@ -16,5 +16,13 @@ The SNPs associated with the disease are **identified by testing for statistical
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Manhattan_Plot.png" width="80%" height="80%" alt="alt text">
 </p>
 
-# Demo
-Implementation description
+# GWAS Analysis in PLINK
+
+To run the bash script, first you need to make the bash file executable:
+```
+chmod +x gwas.sh
+```
+Then you can run the analysis by executing the bash file:
+```
+./gwas.sh
+```
