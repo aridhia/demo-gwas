@@ -44,6 +44,6 @@ If you want to see what each step did, you can check the \*.log files in the *ou
 ./gwas.sh
 ```
 
-# Analyzing Results
+# Visualizing Results
 
 Two R scripts were written for plotting GWAS results. 
