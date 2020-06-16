@@ -22,12 +22,12 @@ Webster et al. *(2009)* surveyed the relationship between the human brain transc
 # GWAS Analysis in PLINK
 First, you will need do download the raw data (link given below), place it in the *data* folder, and extract all the files:  https://drive.google.com/drive/folders/1ud5F9WN9Xx3oXIkb5xIg1b_zz1nzp3IR
 
-You following three files will be used for the analyses:
-        ◦ **adgwas.map** Pmap files that contain the position of each SNP on the chromosomes relative to the Human Genome. The pmap file is in the 4 column format.
-        ◦ **adgwas.ped** Pedigree file that contains genotypes calls from 502,627 SNPs on the 364 samples are given as well as anonymous individual identifiers for each sample. Data is not filtered for call rates, allele frequencies or Hardy Weinberg equilibrium. Data is not imputed. Alleles are coded as A, C, G, T and missing=0.
-        ◦ **samples.covar** Group and member names correspond to individual identifiers given in the pedigree files. All covariates used in the analysis are listed. Columns are as follows: Group identifier, Individual identifier, Diagnosis (1=unaffected, 2=affected), Age, APOE (Apolipoprotein E), Region (1=frontal, 2=parietal, 3=temporal, 4=cerebellar), postmortem interval (PMI), Site, Hybridization Date.
+The following three files will be used for GWAS:
+- **adgwas.map** Pmap files that contain the position of each SNP on the chromosomes relative to the Human Genome. The pmap file is in the 4 column format.
+- **adgwas.ped** Pedigree file that contains genotypes calls from 502,627 SNPs on the 364 samples are given as well as anonymous individual identifiers for each sample. Data is not filtered for call rates, allele frequencies or Hardy Weinberg equilibrium. Data is not imputed. Alleles are coded as A, C, G, T and missing=0.
+- **samples.covar** Group and member names correspond to individual identifiers given in the pedigree files. All covariates used in the analysis are listed. Columns are as follows: Group identifier, Individual identifier, Diagnosis (1=unaffected, 2=affected), Age, APOE (Apolipoprotein E), Region (1=frontal, 2=parietal, 3=temporal, 4=cerebellar), postmortem interval (PMI), Site, Hybridization Date.
         
-Now that data is ready, we can run the analyses. First, we will run the quality control. This step was divided into two bits: **SNP quality control** and **Sample quality control**. 
+Now that data is ready, we can run the quality control. This step was divided into two bits: **SNP quality control** and **Sample quality control**. 
 
 To run the quality control scripts, first you need to make the bash files executable:
 ```
@@ -43,3 +43,7 @@ If you want to see what each step did, you can check the \*.log files in the *ou
 ```
 ./gwas.sh
 ```
+
+# Analyzing Results
+
+Two R scripts were written for plotting GWAS results. 
