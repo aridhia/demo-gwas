@@ -58,3 +58,32 @@ The app can be run from the R console:
 library(shiny)
 runApp("app.R")
 ```
+
+The app has four tabs:
+1. **An interactive Manhattan plot** showing the the negative logarithm of the p-value plotted against the position in the genome. The red line represents a genome-wide significance threshold, thus SNPs above it will be associated with the Late Onset Alzheimer's Disease. You can hover your mouse over the SNPs to display the variant information. 
+
+ <br>
+<p align="center">
+<img src="/media/app_manhattan.jpg" width="80%" height="80%" alt="alt text">
+</p>
+
+2. **Circular and Rectangular Manhattan plots**: not interactive, more controls for changing the plot parameters as well as functionality for zooming into a single chromosome. 
+ 
+ <br>
+<p align="center">
+<img src="/media/circular_manhattan.png" width="80%" height="80%" alt="alt text">
+</p>
+ 
+3. **Quantile-quantile (QQ) plots**, showing the observed vs expected p value. 
+ 
+ <br>
+<p align="center">
+<img src="/media/qq.png" width="80%" height="80%" alt="alt text">
+</p>
+
+3. **SNP density plots**. 
+ 
+ <br>
+<p align="center">
+<img src="/media/snp_density.png" width="80%" height="80%" alt="alt text">
+</p>
