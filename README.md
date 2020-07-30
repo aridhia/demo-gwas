@@ -24,7 +24,7 @@ GWAS study included 364 participants of European descent with either confirmed L
 
 # GWAS Analysis
 
-First, you will need do **download the raw data**, which is in bioinformatics software PLINK text format  (detailed instructions can be found here). The data is composed of two files: _*.map_ file, which contains SNP information such as chromosome number, variant ID, and so on; _*.ped_ file contains sample pedigree information and genotype calls. 
+First, you will need do **download the raw data**, which is in bioinformatics software PLINK text format  (detailed instructions can be found [here](https://github.com/aridhia/demo-gwas/blob/master/gwas/data/data_instructions.txt)). The data is composed of two files: _*.map_ file, which contains SNP information such as chromosome number, variant ID, and so on; _*.ped_ file contains sample pedigree information and genotype calls. 
 
 The GWAS analysis was divided into three steps:
 
