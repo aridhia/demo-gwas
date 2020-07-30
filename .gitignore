@@ -2,4 +2,5 @@
 .Rhistory
 .RData
 .Ruserdata
-/scripts/pca1.assoc.logistic
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
