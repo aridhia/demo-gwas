@@ -1,0 +1,12 @@
+Download the raw data here:
+https://drive.google.com/drive/folders/1ud5F9WN9Xx3oXIkb5xIg1b_zz1nzp3IR
+
+Extract all the files, and place them in this folder.
+
+The raw data is in bioinformatics software PLINK text format. The data is composed of two files: *.map file, which contains SNP information such as chromosome number, variant ID, and so on; *.ped file contains sample pedigree information and genotype calls. 
+
+
+The following files will be needed for GWAS:
+- adgwas.map. Pmap files that contain the position of each SNP on the chromosomes relative to the Human Genome. The pmap file is in the 4 column format.
+- adgwas.ped. Pedigree file that contains genotypes calls from 502,627 SNPs on the 364 samples are given as well as anonymous individual identifiers for each sample. Data is not filtered for call rates, allele frequencies or Hardy Weinberg equilibrium. Data is not imputed. Alleles are coded as A, C, G, T and missing=0.
+        
