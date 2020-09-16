@@ -3,6 +3,8 @@
 
 This repository walks you through a standard approach to case/control **genome wide association studies (GWAS)** using the data from a Late Onset Alzheimer's Disease study *([Webster et al., 2009](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2667989/pdf/main.pdf)).*
 
+This *[Youtube](https://www.youtube.com/watch?v=u8xH3EGO6uw&feature=youtu.be)* video shows all the steps for the GWAS demo.
+
 # Introduction to GWAS
 
 Genome-wide association study (GWAS) is a hypotheses-free method for **identifying associations between genetic regions and traits** (incl. diseases). GWAS typically **searches for small variations**, known as single-nucleotide polymorphisms (**SNPs**), that occur more frequently in people with a particular disease than in people without the disease. GWAS already has seen success at identifying SNPs related to conditions such as diabetes, Parkinson's and Crohn's.
