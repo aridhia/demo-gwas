@@ -110,10 +110,16 @@ server <- function(input, output) {
     })
 
 
-    # Read in data
-    data_dir <- '../gwas/output/load.assoc.logistic'
-    gwas <- fread(data_dir, select = c('CHR', 'SNP', 'BP', 'P'))
-    gwas_cm <- fread(data_dir, select = c('SNP', 'CHR', 'BP', 'P'))
+    # To work with the data from the original demo
+    
+    # data_dir <- '../gwas/output/load.assoc.logistic'
+    # gwas <- fread(data_dir, select = c('CHR', 'SNP', 'BP', 'P'))
+    # gwas_cm <- fread(data_dir, select = c('SNP', 'CHR', 'BP', 'P'))
+    
+    
+    # Use the HapMap data (from manhattanly package) for the app to work without original demo data
+    gwas <- HapMap %>% select (CHR, SNP, BP, P)
+    gwas_cm <- HapMap %>% select(SNP, CHR, BP, P)
     
     
     # Construct the plot if we have valid parameters
